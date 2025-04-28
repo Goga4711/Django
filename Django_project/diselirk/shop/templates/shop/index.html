@@ -1,0 +1,421 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<title>Dieselirk - Автосервис по ремонту топливных систем дизельных двигателей</title>
+<meta name="description" content="Демонстрационная страница движка DataLife Engine">
+<meta name="keywords" content="Ремонт топливной аппаратуры дизелей и турбин в Иркутске. Доступные цены. Звоните!">
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)">
+<script src="engine/classes/js/jquery.js@v=26"></script>
+<script src="engine/classes/js/jqueryui.js@v=26" defer></script>
+<script src="engine/classes/js/dle_js.js@v=26" defer></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/animate.min.css'%}">
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+<link rel="stylesheet" href="{% static 'css/cubeportfolio.min.css'%}">
+<link rel="stylesheet" href="{% static 'css/font-awesome.css'%}">
+<link rel="stylesheet" href="{% static 'cssjquery.fancybox.min.css'%}">
+<link rel="stylesheet" href="{% static 'css/magnific-popup.min.css'%}">
+<link rel="stylesheet" href="{% static 'css/owl-carousel.min.css'%}">
+<link rel="stylesheet" href="{% static 'css/slicknav.min.css'%}">
+<link rel="stylesheet" href="{% static 'css/reset.css'%}">
+<link rel="stylesheet" href="{% static 'css/style.css'%}">
+<link rel="stylesheet" href="{% static 'css/engine.css'%}">
+<link rel="stylesheet" href="{% static 'css/responsive.css'%}">
+<link rel="stylesheet" href="engine/classes/min/index.php@charset=utf-8&amp;f=%252Ftemplates%252Fbussines%252Funiform%252Fcss%252Funiform.css&amp;114.css" />
+    
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
+    
+</head>
+
+<body>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(90817663, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/90817663" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<header class="header">
+
+<div class="topbar">
+<div class="container">
+<div class="row">
+
+<div class="col-lg-12 col-12">
+<div class="top-contact">
+<div class="single-contact"><i class="fa fa-clock-o"></i>г.Иркутск, мкр.Солнечный 2, ул. Березовая, д.5</div> 
+<div class="single-contact"><i class="fa fa-phone"></i>Телефон: 8 (914) 956-65-66 </div> 
+<div class="single-contact"><i class="fa fa-phone"></i>Телефон: 8 (3952) 560-270</div> 
+
+</div></div>	
+
+
+<!--
+<div class="col-lg-4 col-12">
+<div class="topbar-right">
+<ul class="social-icons">
+<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa fa-vk"></i></a></li>
+<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+</ul>															
+
+</div></div>
+-->
+
+
+</div></div></div>
+    
+<div class="middle-header">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="middle-inner">
+<div class="row">
+
+<div class="col-lg-2 col-md-3 col-12">
+<div class="logo"><a class="logo" href="index.html"><img class="img-responsive" src="{% static 'images/logo2.png' %}" alt="logo"></a></div>							
+<div class="mobile-nav"></div>
+</div>
+
+<div class="col-lg-10 col-md-9 col-12">
+<div class="menu-area">
+<nav class="navbar navbar-expand-lg">
+<div class="navbar-collapse">	
+<div class="nav-inner">	
+<div class="menu-home-menu-container">
+<ul id="nav" class="nav main-menu menu navbar-nav">
+<li><a href="index.html">Главная</a></li>
+<li><a href="{% url 'product_list' %}">Каталог товаров</a></li>
+<li class="icon-active"><a href="index.html#">Услуги</a>
+<ul class="sub-menu">
+<li><a href="diagnostika-dvigatelja.html">Диагностика двигателя</a></li>
+<li><a href="remont-turbin.html">Ремонт турбин</a></li>
+<li><a href="remont-tnvd.html">Ремонт механических и электронно-управляемых ТНВД</a></li>
+<li><a href="remont-forsunok-common-rail.html">Ремонт форсунок и ТНВД Common Rail </a></li>
+<li><a href="https://dieselirk.ru/prodazha-zapasnyh-chastej.html">Продажа запасных частей </a></li>
+<li><a href="dopolnitelnye-uslugi.html">Дополнительные услуги</a></li>
+</ul>								
+</li>
+<li><a href="nashi-raboty.html">Наши работы</a></li>
+<li><a href="klapana-forsunok-denso.html" style="color: #c00;">Клапана форсунок DENSO</a></li>
+<li><a href="https://forum.dieselirk.ru/" target="blank">Форум</a></li>
+</ul>
+</div></div></div>
+</nav>
+											
+<div class="right-bar">
+<ul class="right-nav">
+
+
+</ul>
+
+<div class="button"><a href="index.html#" data-uf-open="/engine/ajax/uniform/uniform.php" data-uf-settings='{"formConfig": "callback"}' class="bizwheel-btn2">Заказать звонок</a></div>
+
+</div>	
+
+</div></div></div></div></div></div></div></div>
+			
+</header>
+    
+
+    
+
+		
+
+<section class="hero-slider style1">
+<div class="home-slider">
+
+<div class="single-slider" style="background-image:url('https://dieselirk.ru/templates/bussines/images/slider-image1.jpg')">
+<div class="container">
+<div class="row">
+<div class="col-lg-7 col-md-8 col-12">
+<div class="welcome-text"> 
+<div class="hero-text"> 
+<h1>Ремонт топливных систем дизельных двигателей <br><br>
+Ремонт турбин</h1>
+<div class="p-text">
+<p>Мы решаем проблемы любой сложности, чтобы Вы не сталкивались с ними вновь.</p>
+</div>
+<div class="button">
+<a href="index.html#" data-uf-open="/engine/ajax/uniform/uniform.php" data-uf-settings='{"formConfig": "callback"}' class="bizwheel-btn theme-1 effect">Оставить заявку</a>
+</div>
+</div></div></div></div></div></div>
+
+    
+</div>
+</section>
+<section class="features-area section-bg">
+<div class="container">
+    
+    <div class="row"><div class="col-12"><div class="section-title style2 text-center">
+<div class="section-top"><h1><b>Преимущества компании</b></h1></div>
+
+</div></div></div>
+<div class="row">
+
+<div class="col-lg-4 col-md-6 col-12">
+<div class="single-feature">
+<div class="icon-head"><i class="fa fa-cogs"></i></div>
+<h4>Ремонт любой сложности</h4>
+<p>Большой опыт работы и профессиональные навыки позволяют осуществлять ремонт любой сложности.</p>
+</div></div>
+
+<div class="col-lg-4 col-md-6 col-12">
+<div class="single-feature">
+<div class="icon-head"><i class="fa fa-handshake-o"></i></div>
+<h4>Опыт работы более 25 лет</h4>
+<p>Данный опыт позволяет работать с трудными и даже нерешаемыми задачами.</p>
+</div></div>
+
+<div class="col-lg-4 col-md-6 col-12">
+<div class="single-feature">
+<div class="icon-head"><i class="fa fa-thumbs-o-up"></i></div>
+<h4><a>Гарантия до 6 месяцев</a></h4>
+<p>Мы уверены в качестве и результате выполняемых нами работ.</p>
+</div></div>
+
+
+
+</div></div>
+</section>
+<section class="services section-bg section-space">
+<div class="container">
+    
+<div class="row"><div class="col-12"><div class="section-title style2 text-center">
+<div class="section-top"><h1><b>Услуги компании</b></h1><h4>Мы предоставляем качественный сервис и гарантию работ.</h4></div>
+
+</div></div></div>
+    
+<div class="row">
+
+<a href="diagnostika-dvigatelja.html"><div class="col-lg-4 col-md-4 col-12">
+<div class="single-service">
+<div class="service-head">
+<img src="{% static 'images/service-01.jpg' %}" alt="image">
+</div>
+<div class="service-content">
+<h4>Диагностика двигателя</h4><br><br>
+<a class="btn" href="diagnostika-dvigatelja.html"></a>
+</div></div></div></a>
+
+<a href="remont-turbin.html"><div class="col-lg-4 col-md-4 col-12">
+<div class="single-service">
+<div class="service-head">
+<img src="{% static 'images/service-02.jpg' %}" alt="image">
+</div>
+<div class="service-content">
+<h4>Ремонт турбин</h4><br><br>
+<a class="btn" href="remont-turbin.html"></a>
+</div></div></div></a>
+
+<a href="remont-tnvd.html"><div class="col-lg-4 col-md-4 col-12">
+<div class="single-service">
+<div class="service-head">
+<img src="{% static 'images/service-03.jpg' %}" alt="image">
+</div>
+<div class="service-content">
+<h4>Ремонт механических и электронно-управляемых ТНВД</h4>
+<a class="btn" href="remont-tnvd.html"></a>
+</div></div></div></a>
+
+<a href="remont-forsunok-common-rail.html"><div class="col-lg-4 col-md-4 col-12">
+<div class="single-service">
+<div class="service-head">
+<img src="{% static 'images/service-04.jpg' %}" alt="image">
+</div>
+<div class="service-content">
+<h4>Ремонт форсунок и ТНВД Common Rail</h4>
+<a class="btn" href="remont-forsunok-common-rail.html"></a>
+</div></div></div></a>
+
+<a href="https://dieselirk.ru/prodazha-zapasnyh-chastej.html"><div class="col-lg-4 col-md-4 col-12">
+<div class="single-service">
+<div class="service-head">
+<img src="{% static 'images/service-05.jpg' %}" alt="image">
+</div>
+<div class="service-content">
+<h4>Продажа запасных частей</h4><br>
+<a class="btn" href="https://dieselirk.ru/prodazha-zapasnyh-chastej.html"></a>
+</div></div></div></a>
+
+<a href="dopolnitelnye-uslugi.html"><div class="col-lg-4 col-md-4 col-12">
+<div class="single-service">
+<div class="service-head">
+<img src="{% static 'images/service-06.jpg' %}" alt="image">
+</div>
+<div class="service-content">
+<h4>Дополнительные услуги</h4><br>
+<a class="btn" href="dopolnitelnye-uslugi.html"></a>
+</div></div></div></a>
+
+</div>
+
+</div>
+    
+    
+<div class="container" style="margin-top: 65px;">
+<div class="contact-map">
+    
+<iframe id="map_704275586" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation" width="100%" height="450px" frameborder="0"></iframe><script type="text/javascript">(function(e,t){var r=document.getElementById(e);r.contentWindow.document.open(),r.contentWindow.document.write(atob(t)),r.contentWindow.document.close()})("map_704275586", "PGJvZHk+PHN0eWxlPgogICAgICAgIGh0bWwsIGJvZHkgewogICAgICAgICAgICBtYXJnaW46IDA7CiAgICAgICAgICAgIHBhZGRpbmc6IDA7CiAgICAgICAgfQogICAgICAgIGh0bWwsIGJvZHksICNtYXAgewogICAgICAgICAgICB3aWR0aDogMTAwJTsKICAgICAgICAgICAgaGVpZ2h0OiAxMDAlOwogICAgICAgIH0KICAgICAgICAuYnVsbGV0LW1hcmtlciB7CiAgICAgICAgICAgIHdpZHRoOiAyMHB4OwogICAgICAgICAgICBoZWlnaHQ6IDIwcHg7CiAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7CiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7CiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgMXB4IDNweCAwIHJnYmEoMCwgMCwgMCwgMC4yKTsKICAgICAgICAgICAgYm9yZGVyOiA0cHggc29saWQgIzAyODFmMjsKICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlOwogICAgICAgIH0KICAgICAgICAucGVybWFuZW50LXRvb2x0aXAgewogICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lOwogICAgICAgICAgICBib3gtc2hhZG93OiBub25lOwogICAgICAgICAgICBib3JkZXI6IG5vbmU7CiAgICAgICAgICAgIHBhZGRpbmc6IDZweCAxMnB4OwogICAgICAgICAgICBjb2xvcjogIzI2MjYyNjsKICAgICAgICB9CiAgICAgICAgLnBlcm1hbmVudC10b29sdGlwOmJlZm9yZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7CiAgICAgICAgfQogICAgICAgIC5kZy1wb3B1cF9oaWRkZW5fdHJ1ZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrOwogICAgICAgIH0KICAgICAgICAubGVhZmxldC1jb250YWluZXIgLmxlYWZsZXQtcG9wdXAgLmxlYWZsZXQtcG9wdXAtY2xvc2UtYnV0dG9uIHsKICAgICAgICAgICAgdG9wOiAwOwogICAgICAgICAgICByaWdodDogMDsKICAgICAgICAgICAgd2lkdGg6IDIwcHg7CiAgICAgICAgICAgIGhlaWdodDogMjBweDsKICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4OwogICAgICAgICAgICBsaW5lLWhlaWdodDogMTsKICAgICAgICB9CiAgICA8L3N0eWxlPjxkaXYgaWQ9Im1hcCI+PC9kaXY+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly9tYXBzLmFwaS4yZ2lzLnJ1LzIuMC9sb2FkZXIuanM/cGtnPWZ1bGwmYW1wO3NraW49bGlnaHQiPjwvc2NyaXB0PjxzY3JpcHQ+KGZ1bmN0aW9uKGUpe3ZhciB0PUpTT04ucGFyc2UoZSkscj10Lm9yZGVyZWRHZW9tZXRyaWVzLG49dC5tYXBQb3NpdGlvbixhPXQuaXNXaGVlbFpvb21FbmFibGVkO2Z1bmN0aW9uIG8oZSl7cmV0dXJuIGRlY29kZVVSSUNvbXBvbmVudChhdG9iKGUpLnNwbGl0KCIiKS5tYXAoZnVuY3Rpb24oZSl7cmV0dXJuIiUiKygiMDAiK2UuY2hhckNvZGVBdCgwKS50b1N0cmluZygxNikpLnNsaWNlKC0yKX0pLmpvaW4oIiIpKX1ERy50aGVuKGZ1bmN0aW9uKCl7dmFyIGU9REcubWFwKCJtYXAiLHtjZW50ZXI6W24ubGF0LG4ubG9uXSx6b29tOm4uem9vbSxzY3JvbGxXaGVlbFpvb206YSx6b29tQ29udHJvbDohYX0pO0RHLmdlb0pTT04ocix7c3R5bGU6ZnVuY3Rpb24oZSl7dmFyIHQscixuLGEsbztyZXR1cm57ZmlsbENvbG9yOm51bGw9PT0odD1lKXx8dm9pZCAwPT09dD92b2lkIDA6dC5wcm9wZXJ0aWVzLmZpbGxDb2xvcixmaWxsT3BhY2l0eTpudWxsPT09KHI9ZSl8fHZvaWQgMD09PXI/dm9pZCAwOnIucHJvcGVydGllcy5maWxsT3BhY2l0eSxjb2xvcjpudWxsPT09KG49ZSl8fHZvaWQgMD09PW4/dm9pZCAwOm4ucHJvcGVydGllcy5zdHJva2VDb2xvcix3ZWlnaHQ6bnVsbD09PShhPWUpfHx2b2lkIDA9PT1hP3ZvaWQgMDphLnByb3BlcnRpZXMuc3Ryb2tlV2lkdGgsb3BhY2l0eTpudWxsPT09KG89ZSl8fHZvaWQgMD09PW8/dm9pZCAwOm8ucHJvcGVydGllcy5zdHJva2VPcGFjaXR5fX0scG9pbnRUb0xheWVyOmZ1bmN0aW9uKGUsdCl7cmV0dXJuInJhZGl1cyJpbiBlLnByb3BlcnRpZXM/REcuY2lyY2xlKHQsZS5wcm9wZXJ0aWVzLnJhZGl1cyk6REcubWFya2VyKHQse2ljb246ZnVuY3Rpb24oZSl7cmV0dXJuIERHLmRpdkljb24oe2h0bWw6IjxkaXYgY2xhc3M9J2J1bGxldC1tYXJrZXInIHN0eWxlPSdib3JkZXItY29sb3I6ICIrZSsiOyc+PC9kaXY+IixjbGFzc05hbWU6Im92ZXJyaWRlLWRlZmF1bHQiLGljb25TaXplOlsyMCwyMF0saWNvbkFuY2hvcjpbMTAsMTBdfSl9KGUucHJvcGVydGllcy5jb2xvcil9KX0sb25FYWNoRmVhdHVyZTpmdW5jdGlvbihlLHQpe2UucHJvcGVydGllcy5kZXNjcmlwdGlvbiYmdC5iaW5kUG9wdXAobyhlLnByb3BlcnRpZXMuZGVzY3JpcHRpb24pLHtjbG9zZUJ1dHRvbjohMCxjbG9zZU9uRXNjYXBlS2V5OiEwfSksZS5wcm9wZXJ0aWVzLnRpdGxlJiZ0LmJpbmRUb29sdGlwKG8oZS5wcm9wZXJ0aWVzLnRpdGxlKSx7cGVybWFuZW50OiEwLG9wYWNpdHk6MSxjbGFzc05hbWU6InBlcm1hbmVudC10b29sdGlwIn0pfX0pLmFkZFRvKGUpfSl9KSgneyJvcmRlcmVkR2VvbWV0cmllcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7InRpdGxlIjoiUkVsRlUwVk1TVkpMIiwiZGVzY3JpcHRpb24iOiJQSEErMEpUUXVOQzMwTFhRdTlHTTBKalJnTkM2UEM5d1BnbzhjRDdRa2RDMTBZRFJrZEMzMEw3UXN0Q3cwWThzSURVc0lOQ2gwTDdRdTlDOTBMWFJoOUM5MFl2UXVTMHlJTkM2MEw3Umd0R0MwTFhRdE5DMjBMM1JpOUM1SU5DLzBMN1JnUzQ4TDNBKyIsImNvbG9yIjoiIzAyODFmMiIsInpJbmRleCI6MTAwMDAwMDAwMH0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbMTA0LjM3ODMxNCw1Mi4yNTU0MjVdfSwiaWQiOjg4NH1dLCJtYXBQb3NpdGlvbiI6eyJsYXQiOjUyLjI1NTI4Njc1MzM0ODUxNCwibG9uIjoxMDQuMzgxNTc1NTg0NDExNjQsInpvb20iOjE1fSwiaXNXaGVlbFpvb21FbmFibGVkIjpmYWxzZX0nKTwvc2NyaXB0PjxzY3JpcHQgYXN5bmM9IiIgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Imh0dHBzOi8vd3d3Lmdvb2dsZXRhZ21hbmFnZXIuY29tL2d0YWcvanM/aWQ9VUEtMTU4ODY2MTY4LTEiPjwvc2NyaXB0PjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4oZnVuY3Rpb24oZSl7ZnVuY3Rpb24gdCgpe2RhdGFMYXllci5wdXNoKGFyZ3VtZW50cyl9d2luZG93LmRhdGFMYXllcj13aW5kb3cuZGF0YUxheWVyfHxbXSx0KCJqcyIsbmV3IERhdGUpLHQoImNvbmZpZyIsZSksd2luZG93Lmd0YWc9dH0pKCdVQS0xNTg4NjYxNjgtMScpPC9zY3JpcHQ+PC9ib2R5Pg==")</script>
+    </div>
+</div>
+    
+    
+</section>
+
+
+
+    
+
+    
+    
+<footer class="footer" style="background-image:url('templates/bussines/images/map.png')">
+<div class="footer-top">
+<div class="container">
+<div class="row">
+
+<div class="col-lg-3 col-md-6 col-12">
+<div class="single-widget footer-about widget">	
+
+<div class="footer-widget-about-description" style="color: #ccc;">
+<div class="logo"><a class="logo" href="index.html"><img class="img-responsive" src="{% static 'images/logo1.png' %}" alt="logo"></a></div>		
+</div>	
+
+<!--
+<div class="social">
+<ul class="social-icons">
+<li><a class="facebook" href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+<li><a class="twitter" href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+<li><a class="linkedin" href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+<li><a class="pinterest" href="#" target="_blank"><i class="fa fa-pinterest-p"></i></a></li>
+<li><a class="instagram" href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+</ul>
+</div>
+-->
+
+
+</div></div>
+
+<div class="col-lg-3 col-md-6 col-12">
+<ul class="address-widget-list">
+<li class="footer-mobile-number"><i class="fa fa-phone"></i>8 (914) 956-65-66 </li>
+
+</ul>
+</div>
+    
+<div class="col-lg-3 col-md-6 col-12">
+<ul class="address-widget-list">
+<li class="footer-mobile-number"><i class="fa fa-phone"></i>8 (3952) 560-270 </li>
+
+</ul>
+</div>
+
+<div class="col-lg-3 col-md-6 col-12">	
+<div class="single-widget footer_contact widget">	
+
+
+<ul class="address-widget-list">
+<li class="footer-mobile-number"><i class="fa fa-envelope"></i>lerkuzakova@mail.ru</li>
+</ul>
+</div></div>
+
+</div></div></div>
+    
+<div class="copyright">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="copyright-content">
+<p>© Copyright &copy; 2020-2024. <br>
+<a href="https://insidecorp.ru/sozdanie-saytov.html" target="_blank">Разработка сайта в Иркутске</a></p>
+</div></div></div></div></div>
+    
+</footer>
+
+<script>
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = 'f537306e5b8b2f52ea8e57b0eebd2caac42b8e51';
+var dle_group      = 5;
+var dle_skin       = 'bussines';
+var dle_wysiwyg    = '1';
+var quick_wysiwyg  = '1';
+var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить", "Удалить", "Загрузка. Пожалуйста, подождите..."];
+var menu_short     = 'Быстрое редактирование';
+var menu_full      = 'Полное редактирование';
+var menu_profile   = 'Просмотр профиля';
+var menu_send      = 'Отправить сообщение';
+var menu_uedit     = 'Админцентр';
+var dle_info       = 'Информация';
+var dle_confirm    = 'Подтверждение';
+var dle_prompt     = 'Ввод информации';
+var dle_req_field  = 'Заполните все необходимые поля';
+var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
+var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведёт к удалению всех его комментариев';
+var dle_complaint  = 'Укажите текст Вашей жалобы для администрации:';
+var dle_big_text   = 'Выделен слишком большой участок текста.';
+var dle_orfo_title = 'Укажите комментарий для администрации к найденной ошибке на странице';
+var dle_p_send     = 'Отправить';
+var dle_p_send_ok  = 'Уведомление успешно отправлено';
+var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
+var dle_reply_title= 'Ответ на комментарий';
+var dle_tree_comm  = '0';
+var dle_del_news   = 'Удалить статью';
+var dle_sub_agree  = 'Вы действительно хотите подписаться на комментарии к данной публикации?';
+var dle_captcha_type  = '0';
+var allow_dle_delete_news   = false;
+var dle_search_delay   = false;
+var dle_search_value   = '';
+jQuery(function($){
+FastSearch();
+});
+//-->
+</script>
+<script>
+	function show_modal_dle() {
+		$("#div_modal_dle").dialog({
+			autoOpen: true,
+			show: "fade",
+            modal:true,
+			hide: "fade",
+			width: 350,
+		});
+	}
+</script>
+<script src="templates/bussines/js/popper.min.js"></script>
+<script src="templates/bussines/js/bootstrap.min.js"></script>
+<script src="templates/bussines/js/scrollup.js"></script>
+<script src="templates/bussines/js/jquery-fancybox.min.js"></script>
+<script src="templates/bussines/js/cubeportfolio.min.js"></script>
+<script src="templates/bussines/js/waypoints.min.js"></script>
+<script src="templates/bussines/js/jquery.counterup.min.js"></script>
+<script src="templates/bussines/js/slicknav.min.js"></script>
+<script src="templates/bussines/js/owl-carousel.min.js"></script>
+<script src="templates/bussines/js/easing.js"></script>
+<script src="templates/bussines/js/theme-option.js"></script>
+<script src="templates/bussines/js/magnific-popup.min.js"></script>
+<script src="templates/bussines/js/active.js"></script>
+<script src="https://dieselirk.ru/engine/classes/min/index.php?charset=utf-8&amp;f=/templates/bussines/uniform/js/jquery.ladda.min.js,/templates/bussines/uniform/js/jquery.form.min.js,/templates/bussines/uniform/js/uniform.js&amp;114"></script>
+    
+</body>
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->
